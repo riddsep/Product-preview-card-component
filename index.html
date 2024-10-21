@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Monserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fraunces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="product-card">
+      <picture class="product-card__image">
+        <source
+          srcset="./images/image-product-desktop.jpg"
+          media="(min-width: 48em)"
+          class="product-card__image--desktop"
+        />
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="perfume bottle"
+          class="product-card__image--mobile"
+          loading="lazy"
+        />
+      </picture>
+
+      <div class="product-card__content">
+        <h3 class="product-card__category">Perfume</h3>
+        <h1 class="product-card__title">Gabrielle Essence Eau De Parfum</h1>
+        <p class="product-card__description">
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="product-card__price">
+          <h1 class="product-card__price--current">$149.99</h1>
+          <span class="product-card__price--original">$169.99</span>
+        </div>
+        <button class="product-card__button">
+          <img
+            src="/images/icon-cart.svg"
+            alt="icon cart"
+            class="product-card__button-icon"
+          />
+          Add to Cart
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
